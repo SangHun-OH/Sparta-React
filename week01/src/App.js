@@ -9,16 +9,13 @@ class App extends React.Component {
     super(props);
     // App 컴포넌트의 state를 정의해준다.
     this.state = {
-      list: ['영화관 가기', '매일 책읽기', '수영 배우기'],
+      list: ['영화관 가기', '매일 책읽기', '수영 배우기', '노래 배우기'],
     };
   }
 
   // 랜더 함수 안에 리액트 엘리먼트를 넣어준다.
   // 클래스 컴포넌트의 특징
   render() {
-    // this 키워드를 통해 state에 접근
-    console.log(this.state);
-
       return (
       <div className="App">
         <h1>내 버킷리스트</h1>
