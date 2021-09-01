@@ -1,23 +1,35 @@
 // 리액트 패키지를 불러옵니다.
-import React from 'react'; 
+import React from "react";
+import styled from "styled-components";
 
 const BucketList = (props) => {
-    
+  const my_lists = props.list;
 
-    const my_lists = props.list;
+  return (
+    <ListStyle>
+      {my_lists.map((list, index) => {
+        return (
+          <ItemStyle key={index}>
+            {list}
+          </ItemStyle>
+        );
+      })}
+    </ListStyle>
+  );
+};
 
-    console.log(props);
+const ListStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+`;
 
-    return (
-        <div className="lists">
-            {
-                 my_lists.map((list, index) => {
-                    console.log(list);
-                    return (<div className="list-item" key={index}>{list}</div>);
-                })
-            }
-        </div>
-    );
-}
+const ItemStyle = styled.div`
+  padding: 16px;
+  margin: 8px;
+  background-color: aliceblue;
+`;
 
 export default BucketList;
