@@ -102,6 +102,7 @@ const Title = styled.h1`
   text-align: center;
 `;
 
+
 const Line = styled.hr`
   margin: 16px 0px;
   border: 1px dotted #ddd;
