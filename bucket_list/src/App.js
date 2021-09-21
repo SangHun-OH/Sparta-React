@@ -37,6 +37,7 @@ class App extends React.Component {
     // App 컴포넌트의 state를 정의해줍니다.
     this.state = {
      
+      
     };
     // ref는 이렇게 선언합니다!
     this.text = React.createRef();
