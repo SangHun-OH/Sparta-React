@@ -40,6 +40,7 @@ class App extends React.Component {
       
       
       
+      
     };
     // ref는 이렇게 선언합니다!
     this.text = React.createRef();
