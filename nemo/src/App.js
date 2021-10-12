@@ -25,7 +25,6 @@ class App extends React.Component {
   };
 
   componentDidMount() {}
-
   render() {
     // 배열을 만듭니다.
     // Array.from()은 배열을 만들고 초기화까지 해주는 내장 함수
