@@ -9,5 +9,4 @@ const NotFound = (props) => {
         </div>
     );
 };
-
 export default NotFound;
