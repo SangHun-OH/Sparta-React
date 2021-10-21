@@ -20,8 +20,7 @@ const Detail = (props) => {
     <div>
       <h1>{bucket_list[bucket_index]}</h1>
       <button onClick={() => {
-        //   dispatch(); <- 괄호안에는 액션 생성 함수가 들어가야겠죠?
-        // 예를 들면 이렇게요.
+        //   dispatch(); <- 괄호안에는 액션 생성 함수 
         dispatch(deleteBucket(bucket_index));
         props.history.goBack();
       }}>삭제하기</button>
