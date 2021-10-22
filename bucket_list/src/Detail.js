@@ -3,12 +3,11 @@ import React from "react";
 
 // redux hook을 불러옵니다.
 import { useDispatch, useSelector } from "react-redux";
-// 내가 만든 액션 생성 함수를 불러옵니다.
+// 내가 만든 액션 생성 함수를 불러온다.
 import {deleteBucket} from "./redux/modules/bucket";
 
 const Detail = (props) => {
     const dispatch = useDispatch();
-    
     
   // 스토어에서 상태값 가져오기
   const bucket_list = useSelector((state) => state.bucket.list);
