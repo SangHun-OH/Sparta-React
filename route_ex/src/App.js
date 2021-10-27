@@ -2,11 +2,12 @@ import React from "react";
 import { render } from "react-dom";
 
 import { withRouter } from "react-router";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 
 import Home from './Home';
 import Cat from './Cat';
 import Dog from './Dog';
+import NotFound from "./NotFound";
 
 class App extends React.Component{
   constructor(props){
@@ -28,10 +29,13 @@ class App extends React.Component{
           <Link to="/dog">Dog으로 가기</Link>
         </div>
 
-
-        <Route path="/" exact component={Home} />
-        <Route path="/cat/:cat_name" component={Cat} />
-        <Route path="/dog" component={Dog} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/cat/:cat_name" component={Cat} />
+          <Route path="/dog" component={Dog} />
+        
+          <Route component={NotFound}/>
+        </Switch>
 
         <button onClick={() => {
           // props에 있는 history를 사용합니다.
