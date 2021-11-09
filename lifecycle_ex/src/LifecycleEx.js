@@ -16,7 +16,6 @@ class LifecycleEx extends React.Component {
   changeCatName = () => {
 
       this.setState({cat_name: '바둑이'});
-
       console.log('고양이 이름을 바꾼다!');
   }
 
