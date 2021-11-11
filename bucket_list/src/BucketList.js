@@ -11,7 +11,6 @@ const BucketList = (props) => {
 
   console.log(bucket_list);
   
-  
   return (
     <ListStyle>
       {bucket_list.map((list, index) => {
