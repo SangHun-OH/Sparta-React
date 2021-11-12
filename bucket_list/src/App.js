@@ -16,7 +16,7 @@ import {loadBucket, createBucket} from './redux/modules/bucket';
 
 // 이 함수는 스토어가 가진 상태값을 props로 받아오기 위한 함수
 const mapStateTopProps = (state) => ({
-  bucket_list: state.bucket.list,
+  bucket_list: state.bucket.list
 });
 
 // 이 함수는 값을 변화시키기 위한 액션 생성 함수를 props로 받아오기 위한 함수
