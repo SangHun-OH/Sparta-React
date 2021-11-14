@@ -28,6 +28,7 @@ const mapDispatchToProps = (dispatch) => ({
     console.log(new_item);
     dispatch(createBucket(new_item));
   }
+  
 });
 
 // 클래스형 컴포넌트
