@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #444;
+  }
+  .box.active {
+  animation: boxFade 2s 1s infinite linear alternate;
+  }
+  @keyframes boxFade {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
