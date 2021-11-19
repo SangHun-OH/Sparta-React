@@ -15,4 +15,5 @@ width: 100px;
 height: 100px;
 background: green;
 `;
+
 export default App;
