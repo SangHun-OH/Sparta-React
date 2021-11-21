@@ -31,6 +31,8 @@ const mapDispatchToProps = (dispatch) => ({
   
 });
 
+
+
 // 클래스형 컴포넌트
 class App extends React.Component {
   constructor(props) {
