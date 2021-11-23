@@ -10,7 +10,7 @@ const BucketList = (props) => {
   const bucket_list = useSelector(state => state.bucket.list);
 
   console.log(bucket_list);
-  
+
   return (
     <ListStyle>
       {bucket_list.map((list, index) => {
