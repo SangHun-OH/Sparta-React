@@ -19,6 +19,7 @@ const mapStateTopProps = (state) => ({
   bucket_list: state.bucket.list
 });
 
+
 // 이 함수는 값을 변화시키기 위한 액션 생성 함수를 props로 받아오기 위한 함수
 const mapDispatchToProps = (dispatch) => ({
   load: () => {
