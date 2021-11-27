@@ -8,9 +8,6 @@ import {useDispatch, useSelector} from 'react-redux';
 const BucketList = (props) => {
   // 버킷리스트를 리덕스 훅으로 가져오기
   const bucket_list = useSelector(state => state.bucket.list);
-
-  console.log(bucket_list);
-
   return (
     <ListStyle>
       {bucket_list.map((list, index) => {
